@@ -12,7 +12,7 @@ class Application
       if item != nil
         resp.write item.price
       else
-        resp.write "Error"
+        resp.write "Item not found"
         resp.status = 400
       end
     else
