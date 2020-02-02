@@ -5,6 +5,7 @@ class application
 
     if req.path.match(/items/)
       item_name = req.path.split("/items/").last
+      item_name = @@items
 
     else
       resp.write "Route not found"
